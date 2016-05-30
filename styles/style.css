@@ -1,0 +1,577 @@
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block; }
+
+audio, canvas, video {
+  display: inline-block; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden] {
+  display: none; }
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+a:focus {
+  outline: thin dotted; }
+
+a:active, a:hover {
+  outline: 0; }
+
+h1 {
+  font-size: 2em; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b, strong {
+  font-weight: 700; }
+
+dfn {
+  font-style: italic; }
+
+mark {
+  background: #ff0;
+  color: #000; }
+
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+q {
+  quotes: \201C \201D \2018 \2019; }
+
+small {
+  font-size: 80%; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -.5em; }
+
+sub {
+  bottom: -.25em; }
+
+img {
+  border: 0; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em; }
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0; }
+
+button, input {
+  line-height: normal; }
+
+button, html input[type=button],
+input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+button[disabled], input[disabled] {
+  cursor: default; }
+
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0; }
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box; }
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+textarea {
+  overflow: auto;
+  vertical-align: top; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body, figure {
+  margin: 0; }
+
+legend, button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
+
+* {
+  box-sizing: border-box; }
+
+html, button {
+  font-family: 'roboto', sans-serif;
+  font-weight: 100; }
+
+p {
+  font-family: 'helvetica', sans-serif;
+  font-weight: normal; }
+
+body {
+  background: rgba(54, 54, 49, 0.7); }
+
+h1 {
+  font-family: 'roboto';
+  font-weight: 100;
+  letter-spacing: 15px;
+  text-transform: uppercase;
+  color: white;
+  text-shadow: 3px 3px 3px solid black;
+  text-align: center;
+  padding: 0 10px;
+  z-index: 1; }
+
+main {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  height: 100vh;
+  position: relative;
+  max-width: 1280px;
+  margin: 0 auto; }
+  main .splashImg {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center; }
+  main .alert {
+    position: absolute;
+    bottom: 0;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+    right: 0;
+    left: 0;
+    top: 0;
+    padding: 20px;
+    font-size: 20px; }
+    main .alert .fa-times-circle {
+      position: absolute;
+      right: 30px;
+      top: 30px;
+      font-size: 2.8rem;
+      color: white; }
+    main .alert .fa-times-circle:hover {
+      cursor: pointer; }
+    main .alert p {
+      max-width: 600px; }
+  main .splash {
+    height: 100vh;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease, visibility 0.3s ease; }
+    main .splash button {
+      width: 100px;
+      height: 40px;
+      border-radius: 8px;
+      border: #cc1841;
+      box-shadow: 0 3px 1px #710d24;
+      background: #cc1841;
+      color: white;
+      min-height: 40px; }
+    main .splash button:active {
+      outline: none;
+      position: relative;
+      top: 2px;
+      box-shadow: 0 1px 1px #363631; }
+  main .shrinkSplash {
+    opacity: 0;
+    visibility: hidden; }
+
+form.searchForm {
+  display: none;
+  width: 60%; }
+  form.searchForm input.searchFormInput {
+    width: 80%;
+    height: 50px;
+    -ms-flex-pack: center;
+        justify-content: center;
+    border-radius: 5px 0 0 5px;
+    border: none;
+    padding: 15px;
+    float: left; }
+  form.searchForm input.searchFormInput.wrong:focus {
+    box-shadow: 0 1px 10px #cc1841, 0 -1px 10px #cc1841; }
+  form.searchForm input.searchFormSubmit {
+    background: #cc1841;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    color: white;
+    text-transform: uppercase;
+    width: 20%;
+    min-width: 100px;
+    height: 50px; }
+
+form.hiddenForm {
+  display: none; }
+
+.autocomplete-suggestions {
+  border: 1px solid #999;
+  background: #FFF;
+  overflow: auto;
+  font-weight: 300; }
+
+.autocomplete-suggestion {
+  padding: 2px 5px;
+  white-space: nowrap;
+  overflow: hidden; }
+
+.autocomplete-selected {
+  background: #F0F0F0; }
+
+.autocomplete-suggestions strong {
+  font-weight: normal;
+  color: #cc1841; }
+
+.autocomplete-group {
+  padding: 2px 5px; }
+
+.autocomplete-group strong {
+  display: block;
+  border-bottom: 1px solid #000; }
+
+.artistsContainer {
+  display: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      -ms-grid-row-align: center;
+      align-items: center;
+  color: #FFFFFF;
+  height: 75%;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  transition: all 0.3s ease; }
+  .artistsContainer .artistCard {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: start;
+        align-items: flex-start;
+    background: #363631;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px #010100;
+    height: 90%;
+    border-radius: 5px;
+    text-transform: uppercase;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top; }
+    .artistsContainer .artistCard .artistCardImgContainer {
+      width: 100%;
+      border-radius: 5px 5px 0 0;
+      background-position: top;
+      min-height: 80%;
+      color: white;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      padding: 15px;
+      text-shadow: 0 2px 4px black;
+      text-transform: uppercase; }
+      .artistsContainer .artistCard .artistCardImgContainer .artistDetailsContainer {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .artistsContainer .artistCard .buttonsContainer {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+      width: 100%;
+      height: 20%;
+      margin: 0;
+      border-radius: 0;
+      background: #363631; }
+      .artistsContainer .artistCard .buttonsContainer button {
+        margin: 4px 0;
+        border: none;
+        border-radius: 5px;
+        color: #FFFFFF;
+        padding: 4px 8px;
+        outline: none;
+        transition: background 0.1s ease;
+        text-transform: uppercase; }
+      .artistsContainer .artistCard .buttonsContainer .viewMoreInfo {
+        background: #A8A89C;
+        box-shadow: 0 2px 1px #767668; }
+      .artistsContainer .artistCard .buttonsContainer .addToPlaylist {
+        background: #cc1841;
+        box-shadow: 0 3px 1px #710d24;
+        margin: 0;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+            justify-content: center;
+        -ms-flex-align: center;
+            align-items: center;
+        height: 50%;
+        border-radius: 0 0 5px 5px;
+        font-weight: 300; }
+      .artistsContainer .artistCard .buttonsContainer .addToPlaylistPressed {
+        position: relative;
+        top: 2px;
+        background: #A8A89C;
+        box-shadow: 0 1px 0px #767668; }
+      .artistsContainer .artistCard .buttonsContainer .onSpotifyContainer {
+        display: -ms-flexbox;
+        display: flex;
+        height: 50%; }
+        .artistsContainer .artistCard .buttonsContainer .onSpotifyContainer a {
+          text-decoration: none;
+          color: white;
+          width: 50%;
+          height: 100%; }
+          .artistsContainer .artistCard .buttonsContainer .onSpotifyContainer a .fa {
+            color: #cc1841;
+            margin-left: 5px; }
+        .artistsContainer .artistCard .buttonsContainer .onSpotifyContainer .viewOnSpotify {
+          border-left: 1px solid #a8a89c; }
+        .artistsContainer .artistCard .buttonsContainer .onSpotifyContainer .listenOnSpotify {
+          border-right: 1px solid #a8a89c; }
+        .artistsContainer .artistCard .buttonsContainer .onSpotifyContainer .viewOnSpotify,
+        .artistsContainer .artistCard .buttonsContainer .onSpotifyContainer .listenOnSpotify {
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-pack: center;
+              justify-content: center;
+          -ms-flex-align: center;
+              align-items: center;
+          height: 100%;
+          width: 100%;
+          text-align: center;
+          background: #363631;
+          margin: 0;
+          border-top: 1px solid #a8a89c;
+          border-radius: 0;
+          font-weight: 300; }
+  .artistsContainer .fa-times-circle {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    font-size: 2.8rem;
+    color: white; }
+  .artistsContainer .fa-times-circle:hover {
+    cursor: pointer; }
+
+.addedArtistsContainer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 0%;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease-in-out;
+  background: rgba(255, 255, 255, 0.7);
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0 15px; }
+  .addedArtistsContainer .closeAddedArtistsButton {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 30px;
+    width: 35px; }
+    .addedArtistsContainer .closeAddedArtistsButton:hover {
+      cursor: pointer; }
+  .addedArtistsContainer .play-button {
+    width: 20%;
+    -ms-flex-order: 6;
+        order: 6;
+    text-align: center;
+    padding-top: 6px; }
+    .addedArtistsContainer .play-button img {
+      width: 80px;
+      height: 80px; }
+      .addedArtistsContainer .play-button img:hover {
+        cursor: pointer; }
+    .addedArtistsContainer .play-button h3 {
+      margin: 0;
+      font-weight: lighter;
+      letter-spacing: 2px; }
+  .addedArtistsContainer .addedArtistsCard {
+    text-align: center;
+    padding: 5px;
+    width: 20%; }
+    .addedArtistsContainer .addedArtistsCard .addedArtistImgContainer {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin: 10px auto;
+      border: 3px solid #cc1841;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-align: center;
+          align-items: center; }
+      .addedArtistsContainer .addedArtistsCard .addedArtistImgContainer .removeImg {
+        opacity: 0;
+        visibility: hidden;
+        font-size: 30px;
+        transition: all 0.1s ease;
+        color: white;
+        font-size: 49px;
+        text-shadow: 0px 2px 4px black;
+        cursor: pointer; }
+      .addedArtistsContainer .addedArtistsCard .addedArtistImgContainer:hover .removeImg {
+        opacity: 1;
+        visibility: visible; }
+    .addedArtistsContainer .addedArtistsCard p {
+      color: #363631;
+      letter-spacing: 1px;
+      margin: 0 auto;
+      overflow: hidden;
+      width: 90%;
+      font-size: 12px;
+      font-weight: lighter;
+      white-space: nowrap;
+      text-overflow: ellipsis; }
+
+.addedArtistsContainer.show {
+  opacity: 1;
+  visibility: visible;
+  height: 25%;
+  width: 100%; }
+
+.showArtistContainer {
+  display: -ms-flexbox;
+  display: flex;
+  top: 0;
+  visibility: visible;
+  opacity: 1; }
+
+.spotifyContainer {
+  z-index: 5;
+  background: #363631;
+  width: 100vw;
+  height: 100%;
+  display: none;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-direction: column-reverse;
+      flex-direction: column-reverse;
+  -ms-flex-align: center;
+      -ms-grid-row-align: center;
+      align-items: center; }
+  .spotifyContainer .fa-times-circle {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    font-size: 2.8rem;
+    color: white; }
+  .spotifyContainer .fa-times-circle:hover {
+    cursor: pointer; }
+
+@media screen and (max-width: 940px) {
+  form.searchForm {
+    width: 80%; } }
+
+@media screen and (max-width: 767px) {
+  form.searchForm {
+    text-align: center; }
+  main .splash h1 {
+    letter-spacing: 3px; }
+  main .splash .splashImg img {
+    width: 80%; }
+  form.searchForm input.searchFormInput {
+    width: 100%;
+    border-radius: 5px; }
+  form.searchForm input.searchFormSubmit {
+    margin-top: 20px;
+    border-radius: 5px; } }
+
+@media screen and (max-width: 480px) {
+  main .artistsContainer {
+    font-size: 0.7rem; }
+  main .addedArtistsContainer {
+    padding: 0 5px; }
+    main .addedArtistsContainer .play-button {
+      padding-top: 17px; }
+      main .addedArtistsContainer .play-button img {
+        width: 57px;
+        height: 57px; }
+    main .addedArtistsContainer .addedArtistsCard .addedArtistImgContainer {
+      width: 56px;
+      height: 56px;
+      border-width: 2px; }
+    main .addedArtistsContainer .addedArtistsCard p {
+      display: none; } }
